@@ -95,6 +95,18 @@ sinfo -p debug -N
 # Show node info
 scontrol show node gra202
 
+# Show queue of given node 
+squeue -w gra202
+
+# See running processes on partition
+squeue -p debug -t R
+
+# List jobs on current node
+scontrol listjobs
+
+# See pending processes on partition
+squeue -p debug -t PD
+
 # Display all partitions on the cluster (the flag -o stands for output)
 sinfo -o %P
 
