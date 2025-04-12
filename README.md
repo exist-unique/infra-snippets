@@ -21,3 +21,7 @@ You can also connect a local Jupyter notebook located on your own computer to th
 sshuttle --dns -Nr <your_user_name>@narval.computecanada.ca
 ```
 3. Once connected, set local `ipynb` kernel to remote Jupyter server URL as usual (step 3 and 4 above).
+
+## Slurm 
+
+`sbatch template.slurm`
