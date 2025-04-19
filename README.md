@@ -25,3 +25,14 @@ sshuttle --dns -Nr <your_user_name>@narval.computecanada.ca
 ## Slurm 
 
 `sbatch template.slurm`
+
+## SSH GitHub
+
+On server `ssh-keygen -t ed25519 -C "<github_no_reply_email>"` then `ssh-add ~/.ssh/id_ed25519`.
+
+Add public key to https://github.com/settings/keys
+
+Run `ssh -T git@github.com` on server to connect. 
+
+
+
